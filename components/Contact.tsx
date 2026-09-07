@@ -3,6 +3,7 @@
 import { useActionState } from "react";
 import { submitContactForm, type ContactFormState } from "@/app/actions/contact";
 import { contact, site } from "@/lib/content";
+import { IconPhone } from "@/components/icons";
 
 const initialState: ContactFormState = { status: "idle" };
 
@@ -68,7 +69,8 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 w-full"
             >
-              📱 Escribir por WhatsApp
+              <IconPhone className="w-4 h-4" />
+              Escribir por WhatsApp
             </a>
           </div>
 

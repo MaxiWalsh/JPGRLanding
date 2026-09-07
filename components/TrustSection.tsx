@@ -1,4 +1,17 @@
 import { trust } from "@/lib/content";
+import {
+  IconTarget,
+  IconTrendingUp,
+  IconMessage,
+  IconGlobe,
+} from "@/components/icons";
+
+const iconMap = {
+  target: IconTarget,
+  "trending-up": IconTrendingUp,
+  message: IconMessage,
+  globe: IconGlobe,
+};
 
 export default function TrustSection() {
   return (
@@ -12,9 +25,13 @@ export default function TrustSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {trust.items.map((item) => (
+          {trust.items.map((item) => {
+            const Icon = iconMap[item.icon as keyof typeof iconMap];
+            return (
             <div key={item.title} className="text-center">
-              <div className="text-4xl mb-3">{item.icon}</div>
+              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-green-50 mb-4 mx-auto">
+                {Icon && <Icon className="w-10 h-10 text-green-600" />}
+              </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">
                 {item.title}
               </h3>
@@ -22,7 +39,8 @@ export default function TrustSection() {
                 {item.description}
               </p>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

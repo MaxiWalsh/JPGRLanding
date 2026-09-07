@@ -1,4 +1,5 @@
 import { hero, site } from "@/lib/content";
+import { IconScale } from "@/components/icons";
 
 export default function Hero() {
   return (
@@ -39,7 +40,7 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="aspect-square w-full max-w-sm rounded-xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center shadow-xl">
               <div className="text-center">
-                <div className="text-6xl mb-4">👨‍⚖️</div>
+                <IconScale className="w-20 h-20 text-slate-400 mb-4" />
                 <p className="text-sm text-slate-400">
                   {/* Foto de perfil profesional — reemplazar cuando esté disponible */}
                 </p>

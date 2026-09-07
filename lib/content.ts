@@ -29,37 +29,37 @@ export const services: Service[] = [
     title: "Defensa Penal Estratégica",
     description:
       "Construcción de estrategias sólidas para tu defensa en procesos penales complejos, desde la investigación hasta la sentencia.",
-    icon: "⚖️",
+    icon: "scale",
   },
   {
     title: "Denuncias y Querellas",
     description:
       "Asesoramiento integral en la presentación de denuncias o querellas, protegiendo tus derechos como víctima o querellante.",
-    icon: "📋",
+    icon: "document",
   },
   {
     title: "Asistencia en Detenciones",
     description:
       "Acompañamiento urgente ante una detención: protección de derechos, comunicación con la familia y primeros pasos procesales.",
-    icon: "🚨",
+    icon: "alert",
   },
   {
     title: "Delitos Económicos",
     description:
       "Defensa especializada en casos de fraude, estafas, malversación y otros delitos de orden económico y patrimonial.",
-    icon: "💼",
+    icon: "briefcase",
   },
   {
     title: "Violencia de Género",
     description:
       "Asistencia legal a víctimas de violencia de género en procesos penales, resguardando tu integridad y derecho a justicia.",
-    icon: "🛡️",
+    icon: "shield",
   },
   {
     title: "Accidentes Viales",
     description:
       "Defensa en casos de siniestros viales con consecuencias penales: asesoramiento integral ante homicidio o lesiones culposas.",
-    icon: "🚗",
+    icon: "car",
   },
 ];
 
@@ -99,22 +99,22 @@ export const trust = {
   title: "Por qué elegir nuestro acompañamiento",
   items: [
     {
-      icon: "🎯",
+      icon: "target",
       title: "Exclusividad Penal",
       description: "Dedicación absoluta a casos de Derecho Penal, sin distracciones en otras áreas.",
     },
     {
-      icon: "📈",
+      icon: "trending-up",
       title: "Trayectoria",
       description: "Experiencia probada en tribunales penales y litigación oral.",
     },
     {
-      icon: "💬",
+      icon: "message",
       title: "Atención Directa",
       description: "Contacto permanente sin intermediarios. Tu abogado, directamente.",
     },
     {
-      icon: "🌍",
+      icon: "globe",
       title: "Cobertura Integral",
       description: "Asistencia en La Plata, CABA, PBA y fuero Federal.",
     },

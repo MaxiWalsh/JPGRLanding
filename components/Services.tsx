@@ -1,8 +1,25 @@
 import { services, servicesIntro, commonSituations, site } from "@/lib/content";
+import {
+  IconScale,
+  IconDocument,
+  IconAlert,
+  IconBriefcase,
+  IconShield,
+  IconCar,
+} from "@/components/icons";
 
 const whatsappHref = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(
   "Hola, quisiera consultar sobre uno de estos temas."
 )}`;
+
+const iconMap = {
+  scale: IconScale,
+  document: IconDocument,
+  alert: IconAlert,
+  briefcase: IconBriefcase,
+  shield: IconShield,
+  car: IconCar,
+};
 
 export default function Services() {
   return (
@@ -25,13 +42,15 @@ export default function Services() {
 
         {/* Grid de servicios */}
         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
+          {services.map((service) => {
+            const Icon = iconMap[service.icon as keyof typeof iconMap];
+            return (
             <div
               key={service.title}
               className="group rounded-2xl bg-white p-8 shadow-sm border border-slate-100 transition-all hover:shadow-lg hover:-translate-y-1"
             >
               <div className="mb-4 flex items-center justify-center w-12 h-12 rounded-full bg-green-50">
-                <span className="text-2xl">{service.icon}</span>
+                {Icon && <Icon className="w-6 h-6 text-green-600" />}
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 {service.title}
@@ -46,7 +65,8 @@ export default function Services() {
                 Leer más →
               </a>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Sección de situaciones comunes */}

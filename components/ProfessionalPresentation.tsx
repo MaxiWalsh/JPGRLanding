@@ -1,4 +1,5 @@
 import { professional } from "@/lib/content";
+import { IconUser } from "@/components/icons";
 
 export default function ProfessionalPresentation() {
   return (
@@ -9,7 +10,7 @@ export default function ProfessionalPresentation() {
           <div className="flex justify-center">
             <div className="aspect-square w-full max-w-sm rounded-3xl bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center shadow-lg overflow-hidden">
               <div className="text-center">
-                <div className="text-6xl mb-2">👤</div>
+                <IconUser className="w-20 h-20 text-slate-400 mx-auto" />
               </div>
             </div>
           </div>

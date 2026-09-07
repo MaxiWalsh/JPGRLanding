@@ -1,4 +1,5 @@
 import { site } from "@/lib/content";
+import { IconPhone } from "@/components/icons";
 
 const navLinks = [
   { href: "#inicio", label: "INICIO" },
@@ -34,7 +35,8 @@ export default function Header() {
           rel="noopener noreferrer"
           className="flex items-center gap-2 rounded-full bg-green-600 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-green-700"
         >
-          📱 WHATSAPP
+          <IconPhone className="w-4 h-4" />
+          WHATSAPP
         </a>
       </div>
     </header>
