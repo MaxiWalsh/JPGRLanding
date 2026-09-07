@@ -1,0 +1,45 @@
+import { professional } from "@/lib/content";
+
+export default function ProfessionalPresentation() {
+  return (
+    <section className="scroll-mt-24 bg-white py-20">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          {/* Foto placeholder izquierda */}
+          <div className="flex justify-center">
+            <div className="aspect-square w-full max-w-sm rounded-3xl bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center shadow-lg overflow-hidden">
+              <div className="text-center">
+                <div className="text-6xl mb-2">👤</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contenido derecha */}
+          <div className="flex flex-col gap-6">
+            <div>
+              <h2 className="text-4xl font-bold text-slate-900 mb-2">
+                {professional.name}
+              </h2>
+              <p className="text-xl font-semibold text-green-600">
+                {professional.title}
+              </p>
+            </div>
+
+            <p className="text-lg leading-relaxed text-slate-700">
+              {professional.bio}
+            </p>
+
+            <div className="space-y-2">
+              {professional.credentials.map((credential) => (
+                <div key={credential} className="flex items-start gap-3">
+                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <p className="text-slate-700">{credential}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

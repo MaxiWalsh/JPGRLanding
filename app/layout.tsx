@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Juan Pérez | Abogado",
+  title: "Juan Pablo Gaseli Rozados | Abogado Penalista",
   description:
-    "Asesoramiento legal en Derecho Civil, Laboral, de Familia y Comercial. Consultá ahora.",
+    "Defensa penal estratégica en La Plata, CABA y Justicia Federal. Consultá tu caso ahora.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

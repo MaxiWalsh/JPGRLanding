@@ -7,62 +7,75 @@ import { contact, site } from "@/lib/content";
 const initialState: ContactFormState = { status: "idle" };
 
 const whatsappHref = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(
-  "Hola, quería hacer una consulta legal."
+  "Hola, quisiera hacer una consulta sobre mi caso penal."
 )}`;
 
 export default function Contact() {
   const [state, formAction, isPending] = useActionState(submitContactForm, initialState);
 
   return (
-    <section id="contacto" className="bg-slate-50">
+    <section id="contacto" className="scroll-mt-24 bg-slate-50">
       <div className="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center mb-12">
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
             {contact.title}
           </h2>
           <p className="mt-4 text-lg text-slate-600">{contact.subtitle}</p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-2">
-          <div className="space-y-4 text-slate-700">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          {/* Bloque oscuro izquierda */}
+          <div className="rounded-3xl bg-slate-900 text-white p-8 sm:p-10 flex flex-col justify-between">
             <div>
-              <p className="text-sm font-medium uppercase tracking-wide text-slate-400">
-                Teléfono
+              <h3 className="text-2xl font-bold mb-4">
+                {contact.consultBoxTitle}
+              </h3>
+              <p className="text-slate-300 mb-8">
+                {contact.consultBoxSubtitle}
               </p>
-              <p className="text-lg">{site.phoneDisplay}</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium uppercase tracking-wide text-slate-400">
-                Email
-              </p>
-              <p className="text-lg">{site.email}</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium uppercase tracking-wide text-slate-400">
-                Dirección
-              </p>
-              <p className="text-lg">{site.address}</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium uppercase tracking-wide text-slate-400">
-                Horario de atención
-              </p>
-              <p className="text-lg">{site.officeHours}</p>
+
+              <div className="space-y-6 mb-8">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
+                    Teléfono
+                  </p>
+                  <p className="text-lg text-white">{site.phoneDisplay}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
+                    Email
+                  </p>
+                  <p className="text-lg text-white">{site.email}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
+                    Zona de cobertura
+                  </p>
+                  <p className="text-lg text-white">{site.address}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
+                    Horario
+                  </p>
+                  <p className="text-lg text-white">{site.officeHours}</p>
+                </div>
+              </div>
             </div>
 
             <a
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-500"
+              className="flex items-center justify-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 w-full"
             >
-              Escribir por WhatsApp
+              📱 Escribir por WhatsApp
             </a>
           </div>
 
-          <form action={formAction} className="space-y-4">
+          {/* Formulario derecha */}
+          <form action={formAction} className="space-y-5">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="name" className="block text-sm font-semibold text-slate-900 mb-2">
                 Nombre
               </label>
               <input
@@ -70,11 +83,12 @@ export default function Contact() {
                 name="name"
                 type="text"
                 required
-                className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-slate-900 focus:border-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-500"
+                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors"
+                placeholder="Tu nombre completo"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
                 Email
               </label>
               <input
@@ -82,35 +96,37 @@ export default function Contact() {
                 name="email"
                 type="email"
                 required
-                className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-slate-900 focus:border-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-500"
+                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors"
+                placeholder="tu@email.com"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="message" className="block text-sm font-semibold text-slate-900 mb-2">
                 Consulta
               </label>
               <textarea
                 id="message"
                 name="message"
-                rows={4}
+                rows={5}
                 required
-                className="mt-1 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-slate-900 focus:border-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-500"
+                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors resize-none"
+                placeholder="Describe tu situación legal..."
               />
             </div>
 
             <button
               type="submit"
               disabled={isPending}
-              className="w-full rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {isPending ? "Enviando..." : "Enviar consulta"}
+              {isPending ? "Enviando..." : "Enviar Consulta"}
             </button>
 
             {state.status !== "idle" && state.message && (
               <p
                 role="status"
-                className={`text-sm ${
-                  state.status === "success" ? "text-emerald-600" : "text-red-600"
+                className={`text-sm font-medium ${
+                  state.status === "success" ? "text-green-600" : "text-red-600"
                 }`}
               >
                 {state.message}

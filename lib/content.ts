@@ -1,67 +1,122 @@
 export const site = {
-  lawyerName: "Dr. Juan Pérez",
-  tagline: "Abogado",
-  phoneDisplay: "+54 9 11 0000-0000",
-  whatsappNumber: "5491100000000",
-  email: "contacto@abogadoperez.com.ar",
-  address: "Av. Ejemplo 1234, Ciudad Autónoma de Buenos Aires",
+  lawyerName: "Juan Pablo Gaseli Rozados",
+  tagline: "Abogado Penalista",
+  phoneDisplay: "221 409-0819",
+  whatsappNumber: "5492214090819",
+  email: "contacto@grpenal.com.ar",
+  address: "La Plata, Provincia de Buenos Aires / CABA / Justicia Federal",
   officeHours: "Lunes a viernes de 9 a 18 hs",
+  instagram: "@grpenal",
+  instagramUrl: "https://www.instagram.com/grpenal/",
 };
 
 export const hero = {
-  title: `${site.lawyerName}`,
+  title: "Defensa Penal Estratégica",
   subtitle:
-    "Asesoramiento legal claro y cercano, con más de 15 años de experiencia defendiendo tus intereses.",
-  ctaPrimary: "Consultá ahora",
-  ctaSecondary: "Conocé los servicios",
+    "Protegemos tus derechos, tu libertad y tu tranquilidad. Acompañamiento experto en cada etapa del proceso penal.",
+  ctaPrimary: "Solicitar Asesoramiento",
+  ctaSecondary: "Conocer Servicios",
 };
 
 export type Service = {
   title: string;
   description: string;
+  icon: string;
 };
 
 export const services: Service[] = [
   {
-    title: "Derecho Civil",
+    title: "Defensa Penal Estratégica",
     description:
-      "Contratos, sucesiones, daños y perjuicios, y todo tipo de conflictos entre particulares.",
+      "Construcción de estrategias sólidas para tu defensa en procesos penales complejos, desde la investigación hasta la sentencia.",
+    icon: "⚖️",
   },
   {
-    title: "Derecho Laboral",
+    title: "Denuncias y Querellas",
     description:
-      "Despidos, indemnizaciones, accidentes de trabajo y reclamos ante la Justicia laboral.",
+      "Asesoramiento integral en la presentación de denuncias o querellas, protegiendo tus derechos como víctima o querellante.",
+    icon: "📋",
   },
   {
-    title: "Derecho de Familia",
+    title: "Asistencia en Detenciones",
     description:
-      "Divorcios, alimentos, régimen de visitas y todo lo relacionado con el derecho de familia.",
+      "Acompañamiento urgente ante una detención: protección de derechos, comunicación con la familia y primeros pasos procesales.",
+    icon: "🚨",
   },
   {
-    title: "Derecho Comercial",
+    title: "Delitos Económicos",
     description:
-      "Constitución de sociedades, contratos comerciales y asesoramiento a pymes.",
+      "Defensa especializada en casos de fraude, estafas, malversación y otros delitos de orden económico y patrimonial.",
+    icon: "💼",
   },
   {
-    title: "Sucesiones y Herencias",
+    title: "Violencia de Género",
     description:
-      "Trámites sucesorios, partición de bienes y asesoramiento a herederos.",
+      "Asistencia legal a víctimas de violencia de género en procesos penales, resguardando tu integridad y derecho a justicia.",
+    icon: "🛡️",
   },
   {
-    title: "Consultas Generales",
+    title: "Accidentes Viales",
     description:
-      "¿Tenés una duda legal puntual? Escribime y te ayudo a encontrar el camino correcto.",
+      "Defensa en casos de siniestros viales con consecuencias penales: asesoramiento integral ante homicidio o lesiones culposas.",
+    icon: "🚗",
   },
 ];
 
 export const servicesIntro = {
   title: "Servicios Profesionales",
   subtitle:
-    "Un acompañamiento integral en las distintas áreas del derecho, con foco en resultados concretos.",
+    "Especialización en Derecho Penal con enfoque estratégico y acompañamiento integral en cada caso.",
 };
+
+export const commonSituations = [
+  "Recibiste una citación judicial y no sabés cómo proceder",
+  "Fuiste denunciado por un delito y necesitás armar tu defensa",
+  "Estás involucrado en una investigación penal en curso",
+  "Detuvieron a un familiar y necesitás asistencia legal urgente",
+];
 
 export const contact = {
   title: "Contacto",
   subtitle:
-    "Contame tu consulta y te respondo a la brevedad. También podés escribirme directamente por WhatsApp.",
+    "Contame tu situación legal y te brindo orientación a la brevedad. También podés escribirme directamente por WhatsApp.",
+  consultBoxTitle: "¿Necesitás asesoramiento legal?",
+  consultBoxSubtitle: "Estoy disponible para consultas sobre tu caso penal. Actuaré con urgencia en detenciones.",
+};
+
+export const professional = {
+  name: "Juan Pablo Gaseli Rozados",
+  title: "Abogado Penalista",
+  bio: "Mi compromiso es brindar una defensa penal impecable y un acompañamiento humano constante. Entiendo que detrás de cada caso penal hay una vida, una familia y un futuro en juego. Trabajaré incansablemente para proteger tus derechos y alcanzar el mejor resultado posible.",
+  credentials: [
+    "Especialista en Litigación Oral y Defensa Penal",
+    "Foco exclusivo en Derecho Penal",
+    "Atención integral en PBA, CABA y Justicia Federal",
+  ],
+};
+
+export const trust = {
+  title: "Por qué elegir nuestro acompañamiento",
+  items: [
+    {
+      icon: "🎯",
+      title: "Exclusividad Penal",
+      description: "Dedicación absoluta a casos de Derecho Penal, sin distracciones en otras áreas.",
+    },
+    {
+      icon: "📈",
+      title: "Trayectoria",
+      description: "Experiencia probada en tribunales penales y litigación oral.",
+    },
+    {
+      icon: "💬",
+      title: "Atención Directa",
+      description: "Contacto permanente sin intermediarios. Tu abogado, directamente.",
+    },
+    {
+      icon: "🌍",
+      title: "Cobertura Integral",
+      description: "Asistencia en La Plata, CABA, PBA y fuero Federal.",
+    },
+  ],
 };
