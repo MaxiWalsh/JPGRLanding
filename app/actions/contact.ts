@@ -38,13 +38,23 @@ export async function submitContactForm(
     const resend = new Resend(apiKey);
     const toAddress = process.env.CONTACT_TO_EMAIL || site.email;
 
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "Consultas web <onboarding@resend.dev>",
       to: toAddress,
       replyTo: email,
       subject: `Nueva consulta de ${name}`,
       text: `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`,
     });
+
+    if (error) {
+      console.error("Resend devolvió un error al enviar el email:", error);
+      return {
+        status: "error",
+        message: "No se pudo enviar la consulta. Intentá más tarde.",
+      };
+    }
+
+    console.log("Email de contacto enviado, id:", data?.id);
 
     return {
       status: "success",
