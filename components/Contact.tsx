@@ -26,39 +26,33 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {/* Bloque oscuro izquierda */}
-          <div className="rounded-3xl bg-slate-900 text-white p-8 sm:p-10 flex flex-col justify-between">
+          <div className="rounded-3xl bg-maroon text-white p-8 sm:p-10 flex flex-col justify-between">
             <div>
               <h3 className="text-2xl font-bold mb-4">
                 {contact.consultBoxTitle}
               </h3>
-              <p className="text-slate-300 mb-8">
+              <p className="text-ivory/70 mb-8">
                 {contact.consultBoxSubtitle}
               </p>
 
               <div className="space-y-6 mb-8">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ivory/80 mb-1">
                     Teléfono
                   </p>
                   <p className="text-lg text-white">{site.phoneDisplay}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ivory/80 mb-1">
                     Email
                   </p>
                   <p className="text-lg text-white">{site.email}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
-                    Zona de cobertura
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ivory/80 mb-1">
+                    Actuación profesional en
                   </p>
                   <p className="text-lg text-white">{site.address}</p>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-green-400 mb-1">
-                    Horario
-                  </p>
-                  <p className="text-lg text-white">{site.officeHours}</p>
                 </div>
               </div>
             </div>
@@ -67,10 +61,10 @@ export default function Contact() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 w-full"
+              className="flex items-center justify-center gap-2 rounded-full bg-ivory text-maroon border border-maroon px-6 py-3 text-sm font-semibold transition-colors hover:bg-maroon hover:text-ivory w-full"
             >
               <IconPhone className="w-4 h-4" />
-              Escribir por WhatsApp
+              Consultar mi caso por WhatsApp
             </a>
           </div>
 
@@ -85,7 +79,7 @@ export default function Contact() {
                 name="name"
                 type="text"
                 required
-                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors"
+                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-maroon focus:outline-none focus:ring-2 focus:ring-maroon/20 transition-colors"
                 placeholder="Tu nombre completo"
               />
             </div>
@@ -98,7 +92,7 @@ export default function Contact() {
                 name="email"
                 type="email"
                 required
-                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors"
+                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-maroon focus:outline-none focus:ring-2 focus:ring-maroon/20 transition-colors"
                 placeholder="tu@email.com"
               />
             </div>
@@ -111,7 +105,7 @@ export default function Contact() {
                 name="message"
                 rows={5}
                 required
-                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors resize-none"
+                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-maroon focus:outline-none focus:ring-2 focus:ring-maroon/20 transition-colors resize-none"
                 placeholder="Describe tu situación legal..."
               />
             </div>
@@ -119,7 +113,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isPending}
-              className="w-full rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full rounded-full bg-ivory text-maroon border border-maroon px-6 py-3 text-sm font-semibold transition-colors hover:bg-maroon hover:text-ivory disabled:cursor-not-allowed disabled:opacity-60"
             >
               {isPending ? "Enviando..." : "Enviar Consulta"}
             </button>
@@ -128,7 +122,7 @@ export default function Contact() {
               <p
                 role="status"
                 className={`text-sm font-medium ${
-                  state.status === "success" ? "text-green-600" : "text-red-600"
+                  state.status === "success" ? "text-maroon" : "text-red-600"
                 }`}
               >
                 {state.message}

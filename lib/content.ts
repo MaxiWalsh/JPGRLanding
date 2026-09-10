@@ -3,9 +3,8 @@ export const site = {
   tagline: "Abogado Penalista",
   phoneDisplay: "221 409-0819",
   whatsappNumber: "5492214090819",
-  email: "contacto@grpenal.com.ar",
+  email: "jpgrpenal@gmail.com",
   address: "La Plata, Provincia de Buenos Aires / CABA / Justicia Federal",
-  officeHours: "Lunes a viernes de 9 a 18 hs",
   instagram: "@grpenal",
   instagramUrl: "https://www.instagram.com/grpenal/",
 };
@@ -28,13 +27,13 @@ export const services: Service[] = [
   {
     title: "Defensa Penal Estratégica",
     description:
-      "Construcción de estrategias sólidas para tu defensa en procesos penales complejos, desde la investigación hasta la sentencia.",
+      "Acompañamiento y defensa desde el primer momento, durante la etapa de investigación, el juicio oral, la etapa recursiva y la ejecución penal.",
     icon: "scale",
   },
   {
     title: "Denuncias y Querellas",
     description:
-      "Asesoramiento integral en la presentación de denuncias o querellas, protegiendo tus derechos como víctima o querellante.",
+      "Asesoramiento integral en la presentación de denuncias, querellas y constitución como particular damnificado, protegiendo tus derechos como víctima.",
     icon: "document",
   },
   {
@@ -46,7 +45,7 @@ export const services: Service[] = [
   {
     title: "Delitos Económicos",
     description:
-      "Defensa especializada en casos de fraude, estafas, malversación y otros delitos de orden económico y patrimonial.",
+      "Defensa en casos de fraude, estafas, malversación y otros delitos de orden económico y patrimonial.",
     icon: "briefcase",
   },
   {
@@ -66,7 +65,7 @@ export const services: Service[] = [
 export const servicesIntro = {
   title: "Servicios Profesionales",
   subtitle:
-    "Especialización en Derecho Penal con enfoque estratégico y acompañamiento integral en cada caso.",
+    "Derecho Penal con enfoque estratégico y personalizado para cada caso.",
 };
 
 export const commonSituations = [
@@ -74,6 +73,7 @@ export const commonSituations = [
   "Fuiste denunciado por un delito y necesitás armar tu defensa",
   "Estás involucrado en una investigación penal en curso",
   "Detuvieron a un familiar y necesitás asistencia legal urgente",
+  "Fuiste víctima de un delito",
 ];
 
 export const contact = {
@@ -81,13 +81,13 @@ export const contact = {
   subtitle:
     "Contame tu situación legal y te brindo orientación a la brevedad. También podés escribirme directamente por WhatsApp.",
   consultBoxTitle: "¿Necesitás asesoramiento legal?",
-  consultBoxSubtitle: "Estoy disponible para consultas sobre tu caso penal. Actuaré con urgencia en detenciones.",
+  consultBoxSubtitle: "Estoy disponible para consultas sobre tu caso penal. Actuaré con la urgencia que tu caso se merece.",
 };
 
 export const professional = {
   name: "Juan Pablo Gaseli Rozados",
   title: "Abogado Penalista",
-  bio: "Mi compromiso es brindar una defensa penal impecable y un acompañamiento humano constante. Entiendo que detrás de cada caso penal hay una vida, una familia y un futuro en juego. Trabajaré incansablemente para proteger tus derechos y alcanzar el mejor resultado posible.",
+  bio: "Mi nombre es Juan Pablo Gaseli Rozados y soy abogado por la Universidad Nacional de La Plata. Mi compromiso es brindar una defensa penal estratégica, personalizada y comprometida con cada caso, junto con un acompañamiento humano constante. Entiendo que detrás de cada caso penal hay una vida, una familia y un futuro en juego. Por eso, trabajo con precisión y dedicación en cada etapa del proceso, desde investigaciones y audiencias hasta juicios, pedidos de libertad, hábeas corpus, revisiones y control de medidas de coerción. Mi práctica está orientada exclusivamente al Derecho Penal, interviniendo ante tribunales provinciales, federales y de CABA.",
   credentials: [
     "Especialista en Litigación Oral y Defensa Penal",
     "Foco exclusivo en Derecho Penal",
@@ -96,17 +96,12 @@ export const professional = {
 };
 
 export const trust = {
-  title: "Por qué elegir nuestro acompañamiento",
+  title: "¿Mi forma de trabajar?",
   items: [
     {
       icon: "target",
       title: "Exclusividad Penal",
       description: "Dedicación absoluta a casos de Derecho Penal, sin distracciones en otras áreas.",
-    },
-    {
-      icon: "trending-up",
-      title: "Trayectoria",
-      description: "Experiencia probada en tribunales penales y litigación oral.",
     },
     {
       icon: "message",
@@ -115,8 +110,8 @@ export const trust = {
     },
     {
       icon: "globe",
-      title: "Cobertura Integral",
-      description: "Asistencia en La Plata, CABA, PBA y fuero Federal.",
+      title: "Ámbito de actuación",
+      description: "Asistencia en La Plata, CABA, Provincia de Buenos Aires y fuero Federal, con alcance en todo el país.",
     },
   ],
 };

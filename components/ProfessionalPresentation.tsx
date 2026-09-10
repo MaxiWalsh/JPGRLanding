@@ -3,7 +3,7 @@ import { IconUser } from "@/components/icons";
 
 export default function ProfessionalPresentation() {
   return (
-    <section className="scroll-mt-24 bg-white py-20">
+    <section id="quien-soy" className="scroll-mt-24 bg-ivory py-20">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           {/* Foto placeholder izquierda */}
@@ -21,7 +21,7 @@ export default function ProfessionalPresentation() {
               <h2 className="text-4xl font-bold text-slate-900 mb-2">
                 {professional.name}
               </h2>
-              <p className="text-xl font-semibold text-green-600">
+              <p className="text-xl font-semibold text-maroon">
                 {professional.title}
               </p>
             </div>
@@ -33,7 +33,7 @@ export default function ProfessionalPresentation() {
             <div className="space-y-2">
               {professional.credentials.map((credential) => (
                 <div key={credential} className="flex items-start gap-3">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-maroon font-bold mt-1">✓</span>
                   <p className="text-slate-700">{credential}</p>
                 </div>
               ))}

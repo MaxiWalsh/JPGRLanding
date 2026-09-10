@@ -5,31 +5,31 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="scroll-mt-24 bg-slate-900 text-white"
+      className="scroll-mt-24 bg-maroon text-white"
     >
       <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           {/* Contenido izquierda */}
           <div className="flex flex-col gap-6">
-            <p className="text-sm font-medium uppercase tracking-widest text-green-400">
+            <p className="text-sm font-medium uppercase tracking-widest text-ivory/80">
               {site.tagline}
             </p>
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
               {hero.title}
             </h1>
-            <p className="text-lg leading-relaxed text-slate-300">
+            <p className="text-lg leading-relaxed text-ivory/70">
               {hero.subtitle}
             </p>
             <div className="flex flex-col gap-3 pt-2 sm:flex-row">
               <a
                 href="#contacto"
-                className="inline-block rounded-full bg-green-600 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700"
+                className="inline-block rounded-full bg-ivory text-maroon border border-maroon px-8 py-3 text-sm font-semibold transition-colors hover:bg-maroon hover:text-ivory"
               >
                 {hero.ctaPrimary}
               </a>
               <a
                 href="#servicios"
-                className="inline-block rounded-full border-2 border-white px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                className="inline-block rounded-full border-2 border-ivory px-8 py-3 text-sm font-semibold text-ivory transition-colors hover:bg-ivory/10"
               >
                 {hero.ctaSecondary}
               </a>
