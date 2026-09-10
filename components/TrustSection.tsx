@@ -18,10 +18,7 @@ export default function TrustSection() {
     <section className="scroll-mt-24 bg-ivory py-16">
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center mb-12">
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-600 mb-2">
-            Sección de confianza
-          </h2>
-          <p className="text-2xl font-bold text-slate-900">{trust.title}</p>
+          <h2 className="text-2xl font-bold text-slate-900">{trust.title}</h2>
         </div>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

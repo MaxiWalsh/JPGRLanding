@@ -4,7 +4,7 @@ export const site = {
   phoneDisplay: "221 409-0819",
   whatsappNumber: "5492214090819",
   email: "jpgrpenal@gmail.com",
-  address: "La Plata, Provincia de Buenos Aires / CABA / Justicia Federal",
+  address: "La Plata, Provincia de Buenos Aires · CABA · Justicia Federal",
   instagram: "@grpenal",
   instagramUrl: "https://www.instagram.com/grpenal/",
 };
@@ -12,7 +12,7 @@ export const site = {
 export const hero = {
   title: "Defensa Penal Estratégica",
   subtitle:
-    "Protegemos tus derechos, tu libertad y tu tranquilidad. Acompañamiento experto en cada etapa del proceso penal.",
+    "Protejo tus derechos, tu libertad y tu tranquilidad. Te acompaño y asumo personalmente la defensa de tu caso en cada etapa del proceso penal.",
   ctaPrimary: "Solicitar Asesoramiento",
   ctaSecondary: "Conocer Servicios",
 };
@@ -33,39 +33,37 @@ export const services: Service[] = [
   {
     title: "Denuncias y Querellas",
     description:
-      "Asesoramiento integral en la presentación de denuncias, querellas y constitución como particular damnificado, protegiendo tus derechos como víctima.",
+      "Asesoramiento en la presentación de denuncias, querellas y constitución como particular damnificado, protegiendo tus derechos como víctima.",
     icon: "document",
   },
   {
     title: "Asistencia en Detenciones",
     description:
-      "Acompañamiento urgente ante una detención: protección de derechos, comunicación con la familia y primeros pasos procesales.",
+      "Acompañamiento urgente ante una detención, con protección de derechos, comunicación con la familia y orientación sobre los primeros pasos procesales.",
     icon: "alert",
+  },
+  {
+    title: "Homicidios, Lesiones y Abusos",
+    description:
+      "Defensa en causas por homicidio, lesiones y delitos contra la integridad sexual.",
+    icon: "shield",
   },
   {
     title: "Delitos Económicos",
     description:
-      "Defensa en casos de fraude, estafas, malversación y otros delitos de orden económico y patrimonial.",
+      "Defensa en casos de estafas, fraudes, defraudaciones, administración fraudulenta y otros delitos económicos y patrimoniales.",
     icon: "briefcase",
   },
   {
-    title: "Violencia de Género",
+    title: "Siniestros Viales",
     description:
-      "Asistencia legal a víctimas de violencia de género en procesos penales, resguardando tu integridad y derecho a justicia.",
-    icon: "shield",
-  },
-  {
-    title: "Accidentes Viales",
-    description:
-      "Defensa en casos de siniestros viales con consecuencias penales: asesoramiento integral ante homicidio o lesiones culposas.",
+      "Defensa en causas penales derivadas de accidentes de tránsito, incluyendo imputaciones por homicidio o lesiones culposas.",
     icon: "car",
   },
 ];
 
 export const servicesIntro = {
   title: "Servicios Profesionales",
-  subtitle:
-    "Derecho Penal con enfoque estratégico y personalizado para cada caso.",
 };
 
 export const commonSituations = [
@@ -79,19 +77,19 @@ export const commonSituations = [
 export const contact = {
   title: "Contacto",
   subtitle:
-    "Contame tu situación legal y te brindo orientación a la brevedad. También podés escribirme directamente por WhatsApp.",
-  consultBoxTitle: "¿Necesitás asesoramiento legal?",
-  consultBoxSubtitle: "Estoy disponible para consultas sobre tu caso penal. Actuaré con la urgencia que tu caso se merece.",
+    "Agendamos una consulta presencial o virtual para analizar tu situación y definir los pasos a seguir. También podés escribirme directamente por WhatsApp.",
+  consultBoxTitle: "¿Necesitás hablar sobre tu caso?",
+  consultBoxSubtitle: "Estoy disponible para conversar sobre tu situación y orientarte sobre los pasos a seguir.",
 };
 
 export const professional = {
   name: "Juan Pablo Gaseli Rozados",
   title: "Abogado Penalista",
-  bio: "Mi nombre es Juan Pablo Gaseli Rozados y soy abogado por la Universidad Nacional de La Plata. Mi compromiso es brindar una defensa penal estratégica, personalizada y comprometida con cada caso, junto con un acompañamiento humano constante. Entiendo que detrás de cada caso penal hay una vida, una familia y un futuro en juego. Por eso, trabajo con precisión y dedicación en cada etapa del proceso, desde investigaciones y audiencias hasta juicios, pedidos de libertad, hábeas corpus, revisiones y control de medidas de coerción. Mi práctica está orientada exclusivamente al Derecho Penal, interviniendo ante tribunales provinciales, federales y de CABA.",
+  bio: "Mi nombre es Juan Pablo Gaseli Rozados y soy abogado por la Universidad Nacional de La Plata. Mi compromiso es brindar una defensa penal estratégica, personalizada y comprometida con cada caso, junto con un acompañamiento humano constante. Entiendo que detrás de cada caso penal hay una persona, una familia y un futuro en juego. Por eso, trabajo con precisión y dedicación en cada etapa del proceso, desde investigaciones y audiencias iniciales hasta juicios orales, pedidos de libertad en etapa de ejecución, hábeas corpus, revisiones y control de medidas de coerción.",
   credentials: [
-    "Especialista en Litigación Oral y Defensa Penal",
-    "Foco exclusivo en Derecho Penal",
-    "Atención integral en PBA, CABA y Justicia Federal",
+    "Defensa penal estratégica y personalizada",
+    "Dedicación exclusiva al Derecho Penal",
+    "Actuación en PBA, CABA y Justicia Federal",
   ],
 };
 
@@ -101,17 +99,17 @@ export const trust = {
     {
       icon: "target",
       title: "Exclusividad Penal",
-      description: "Dedicación absoluta a casos de Derecho Penal, sin distracciones en otras áreas.",
+      description: "Me dedico exclusivamente al Derecho Penal.",
     },
     {
       icon: "message",
       title: "Atención Directa",
-      description: "Contacto permanente sin intermediarios. Tu abogado, directamente.",
+      description: "Contacto directo y permanente, sin intermediarios. Soy quien lleva personalmente tu caso.",
     },
     {
       icon: "globe",
       title: "Ámbito de actuación",
-      description: "Asistencia en La Plata, CABA, Provincia de Buenos Aires y fuero Federal, con alcance en todo el país.",
+      description: "Brindo asistencia legal en La Plata, CABA, Provincia de Buenos Aires y fuero Federal, con alcance en todo el país.",
     },
   ],
 };

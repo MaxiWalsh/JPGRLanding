@@ -30,7 +30,6 @@ export default function Services() {
           <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
             {servicesIntro.title}
           </h2>
-          <p className="mt-4 text-lg text-slate-600">{servicesIntro.subtitle}</p>
         </div>
 
         {/* Bloque intro destacado */}
