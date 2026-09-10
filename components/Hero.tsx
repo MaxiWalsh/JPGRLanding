@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { hero, site } from "@/lib/content";
-import { IconScale } from "@/components/icons";
 
 export default function Hero() {
   return (
@@ -36,15 +36,17 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Foto placeholder derecha */}
+          {/* Foto institucional derecha */}
           <div className="flex justify-center">
-            <div className="aspect-square w-full max-w-sm rounded-xl bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center shadow-xl">
-              <div className="text-center">
-                <IconScale className="w-20 h-20 text-slate-400 mb-4" />
-                <p className="text-sm text-slate-400">
-                  {/* Foto de perfil profesional — reemplazar cuando esté disponible */}
-                </p>
-              </div>
+            <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-xl shadow-xl">
+              <Image
+                src="/images/hero-banner.jpeg"
+                alt="Juan Pablo Gaseli Rozados — Abogado Penalista"
+                fill
+                className="object-cover"
+                priority
+                sizes="(min-width: 1024px) 384px, 90vw"
+              />
             </div>
           </div>
         </div>
