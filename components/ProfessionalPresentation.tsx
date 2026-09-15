@@ -1,17 +1,21 @@
+import Image from "next/image";
 import { professional } from "@/lib/content";
-import { IconUser } from "@/components/icons";
 
 export default function ProfessionalPresentation() {
   return (
     <section id="quien-soy" className="scroll-mt-24 bg-ivory py-20">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          {/* Foto placeholder izquierda */}
+          {/* Foto del profesional izquierda */}
           <div className="flex justify-center">
-            <div className="aspect-square w-full max-w-sm rounded-3xl bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center shadow-lg overflow-hidden">
-              <div className="text-center">
-                <IconUser className="w-20 h-20 text-slate-400 mx-auto" />
-              </div>
+            <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-3xl shadow-lg">
+              <Image
+                src="/images/quien-soy.jpeg"
+                alt={professional.name}
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 384px, 90vw"
+              />
             </div>
           </div>
 
