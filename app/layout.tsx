@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.grpenal.com.ar"),
   title: "Juan Pablo Gaseli Rozados | Abogado Penalista",
   description:
     "Defensa penal estratégica en La Plata, CABA y Justicia Federal. Consultá tu caso ahora.",
