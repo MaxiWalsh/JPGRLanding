@@ -39,7 +39,7 @@ export async function submitContactForm(
     const toAddress = process.env.CONTACT_TO_EMAIL || site.email;
 
     const { data, error } = await resend.emails.send({
-      from: "Consultas web <onboarding@resend.dev>",
+      from: "Consultas web <contacto@grpenal.com.ar>",
       to: toAddress,
       replyTo: email,
       subject: `Nueva consulta de ${name}`,
